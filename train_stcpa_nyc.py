@@ -389,8 +389,8 @@ def get_params():
     parser.add_argument("--fold", default=4, type=int,
                         choices=[0, 1, 2, 3, 4], help="which data fold to use (split train/test)")
     parser.add_argument("--batch_size", default=64, type=int, help="train batch size")
-    parser.add_argument("--fc_lr", default=1e-3, type=float, help="lr of gen model")
-    parser.add_argument("--att_lr", default=1e-3, type=float, help="lr of gen model")
+    parser.add_argument("--fc_lr", default=1e-4, type=float, help="lr of gen model")
+    parser.add_argument("--att_lr", default=1e-4, type=float, help="lr of gen model")
     parser.add_argument("--name", default="STCPG_Iterative_Refine_2G", type=str, help="model name")
     parser.add_argument("--early_stop", default=50, type=int, help="epochs of early stop")
     parser.add_argument("--epoch", default=2000, type=int, help="epochs")
